@@ -1,4 +1,10 @@
 const achadinhos = [
+     
+    {
+        id:1,
+        name:'Suporte para Celular de Plastico COM ADESIVO',
+        link:'https://shope.ee/9erY3FD6Rt'
+    }
 
 ]
 
@@ -12,7 +18,8 @@ $('#btn-achadinho').click(function(){
         // Pega o achadinho
         let achadinho = achadinhos.find(achadinho => achadinho.id == $('#input-achadinho').val());
         // Cria o html
-        let html = `<h1>${achadinho.name}</h1><a href="${achadinho.link}" target="_blank">${achadinho.name} =)</a>`;
+        let html = `<h1>${achadinho.name}</h1>
+        <a href="${achadinho.link}" target="_blank"><h3>OBA, EU QUERO O MEU PRODUTO. CLIQUE AQUI PARA COMPRAR =)</h3></a>`;
         // Adiciona o html na div
         $('.result').html(html);
     }else{
